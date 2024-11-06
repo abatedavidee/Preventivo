@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preventivo - Sbrocca</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Preventivo</h1>
+            <p>Numero: <span id="quote-number">001</span> | Data: <span id="quote-date">06/11/2024</span></p>
+        </header>
+        
+        <section class="info-section">
+            <div class="company-data">
+                <h3>Sbrocca - Depuratori d'acqua</h3>
+                <p><strong>Indirizzo:</strong> Via Torino 42, Volpiano (TO)</p>
+                <p><strong>Partita IVA:</strong> 01234567890</p>
+                <p><strong>Responsabile:</strong> Davide Abate</p>
+            </div>
+            <div class="client-data">
+                <h3>Dati Cliente</h3>
+                <p>Nome e dettagli cliente (da inserire)</p>
+            </div>
+        </section>
+
+        <section class="validity">
+            <p><strong>Validità preventivo:</strong> Fino al <span id="validity-date">06/12/2024</span></p>
+        </section>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrizione</th>
+                    <th>Quantità</th>
+                    <th>Prezzo (€)</th>
+                    <th>Subtotale (€)</th>
+                    <th>IVA (22%) (€)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Prodotto</td>
+                    <td><input type="number" id="product-quantity" value="0"></td>
+                    <td><input type="number" id="product-price" value="0"></td>
+                    <td id="product-subtotal">0.00</td>
+                    <td id="product-iva">0.00</td>
+                </tr>
+                <tr>
+                    <td>Servizio</td>
+                    <td><input type="number" id="service-quantity" value="0"></td>
+                    <td><input type="number" id="service-price" value="0"></td>
+                    <td id="service-subtotal">0.00</td>
+                    <td id="service-iva">0.00</td>
+                </tr>
+                <tr>
+                    <td>Sconto</td>
+                    <td colspan="2"><input type="number" id="discount" value="0"></td>
+                    <td id="discount-subtotal">0.00</td>
+                    <td>0.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer class="footer">
+            <div class="bank-info">
+                <p><strong>Banca:</strong> Banca Popolare di Volpiano</p>
+                <p><strong>SWIFT/BIC:</strong> BPVOLT00</p>
+                <p><strong>IBAN:</strong> IT60X0542811101000000123456</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
